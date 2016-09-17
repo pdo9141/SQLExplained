@@ -1,0 +1,1 @@
+CREATE DATABASE AdventureWorks2012 ON (FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\AdventureWorks2012_Data.mdf'), (FILENAME = 'C:\Program Files\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\DATA\AdventureWorks2012_Log.ldf') FOR ATTACH;
