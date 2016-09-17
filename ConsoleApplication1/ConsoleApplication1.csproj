@@ -54,7 +54,11 @@
     <Content Include="Topics\AdventureWorks\AttachDB.sql" />
     <Content Include="Topics\AdventureWorks\AttachDBInstructions.JPG" />
     <Content Include="Topics\CrossApply\Queries.sql" />
+    <Content Include="Topics\GroupBy\Queries.sql" />
+    <Content Include="Topics\ScheduledTasks\ScheduledTasks_Sel.sql" />
+    <Content Include="Topics\ScheduledTasks\TableCreate.sql" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
