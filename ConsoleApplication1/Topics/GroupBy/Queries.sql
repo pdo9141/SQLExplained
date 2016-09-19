@@ -1,4 +1,5 @@
-﻿-- WE WANT QUERY OF LATEST PURCHASE MADE BY ALL CUSTOMERS
+﻿USE TestDB
+-- WE WANT QUERY OF LATEST PURCHASE MADE BY ALL CUSTOMERS
 
 -- This is no good, every column added to GROUP BY clause is going to cause more and more strain on SQL
 -- As each record comes in, SQL has to check to see if there is already a record with the same ID, FirstName,

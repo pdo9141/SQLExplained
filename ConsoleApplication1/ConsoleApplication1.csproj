@@ -55,8 +55,10 @@
     <Content Include="Topics\AdventureWorks\AttachDBInstructions.JPG" />
     <Content Include="Topics\CrossApply\Queries.sql" />
     <Content Include="Topics\GroupBy\Queries.sql" />
+    <Content Include="Topics\ManyToMany\Queries.sql" />
     <Content Include="Topics\ScheduledTasks\ScheduledTasks_Sel.sql" />
     <Content Include="Topics\ScheduledTasks\TableCreate.sql" />
+    <Content Include="Topics\TestDB\TableCreate.sql" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
