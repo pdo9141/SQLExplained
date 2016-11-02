@@ -57,6 +57,7 @@
     <Content Include="Topics\GroupBy\Queries.sql" />
     <Content Include="Topics\Joins\Queries.sql" />
     <Content Include="Topics\ManyToMany\Queries.sql" />
+    <Content Include="Topics\Paging\Queries.sql" />
     <Content Include="Topics\ScheduledTasks\ScheduledTasks_Sel.sql" />
     <Content Include="Topics\ScheduledTasks\TableCreate.sql" />
     <Content Include="Topics\TestDB\TableCreate.sql" />
