@@ -1,0 +1,29 @@
+﻿USE TestDB
+CREATE TABLE dbo.Products
+(
+	ProductId INT IDENTITY(1, 1) NOT NULL,
+	Name VARCHAR(50) NOT NULL,
+	UnitPrice DECIMAL(8,2) NOT NULL
+)
+
+CREATE TABLE dbo.ProductSales
+(
+   Id INT IDENTITY(1, 1) NOT NULL,
+   ProductId INT NOT NULL,
+   QuantitySold INT NOT NULL
+)
+
+INSERT INTO Products VALUES ('Books', 20)
+INSERT INTO Products VALUES ('Pens', 14)
+INSERT INTO Products VALUES ('Pencils', 11)
+INSERT INTO Products VALUES ('Clips', 10)
+
+INSERT INTO ProductSales VALUES (1, 10)
+INSERT INTO ProductSales VALUES (3, 23)
+INSERT INTO ProductSales VALUES (4, 21)
+INSERT INTO ProductSales VALUES (1, 13)
+INSERT INTO ProductSales VALUES (3, 12)
+INSERT INTO ProductSales VALUES (4, 13)
+INSERT INTO ProductSales VALUES (1, 11)
+INSERT INTO ProductSales VALUES (2, 12)
+INSERT INTO ProductSales VALUES (1, 14)
