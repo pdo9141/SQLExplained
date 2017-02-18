@@ -61,6 +61,9 @@
     <Content Include="Topics\ScheduledTasks\ScheduledTasks_Sel.sql" />
     <Content Include="Topics\ScheduledTasks\TableCreate.sql" />
     <Content Include="Topics\TestDB\TableCreate.sql" />
+    <Content Include="Topics\Tuning Advisor\ReadMe.txt" />
+    <Content Include="Topics\Tuning Advisor\SeekScanLookups.sql" />
+    <Content Include="Topics\Tuning Advisor\TablesBeingQueried.sql" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
