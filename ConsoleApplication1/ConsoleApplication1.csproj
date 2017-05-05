@@ -49,8 +49,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Topics\AdventureWorks\AdventureWorks2012_Database.zip" />
-    <None Include="Topics\Northwind\Northwind.zip" />
-    <None Include="Topics\Pubs\Pubs.zip" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Topics\AdventureWorks\AttachDB.sql" />
@@ -62,9 +60,7 @@
     <Content Include="Topics\IndexedViews\TableCreate.sql" />
     <Content Include="Topics\Joins\Queries.sql" />
     <Content Include="Topics\ManyToMany\Queries.sql" />
-    <Content Include="Topics\Northwind\ReadMe_SQL2000SampleDbScripts.htm" />
     <Content Include="Topics\Paging\Queries.sql" />
-    <Content Include="Topics\Pubs\ReadMe_SQL2000SampleDbScripts.htm" />
     <Content Include="Topics\RowNumber\Queries.sql" />
     <Content Include="Topics\RowNumber\ReadMe.txt" />
     <Content Include="Topics\RowNumber\TableCreate.sql" />
