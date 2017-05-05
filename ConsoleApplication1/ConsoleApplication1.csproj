@@ -60,10 +60,13 @@
     <Content Include="Topics\IndexedViews\TableCreate.sql" />
     <Content Include="Topics\Joins\Queries.sql" />
     <Content Include="Topics\ManyToMany\Queries.sql" />
+    <Content Include="Topics\OverClause\Queries.sql" />
+    <Content Include="Topics\OverClause\ReadMe.txt" />
     <Content Include="Topics\Paging\Queries.sql" />
-    <Content Include="Topics\RowNumber\Queries.sql" />
-    <Content Include="Topics\RowNumber\ReadMe.txt" />
-    <Content Include="Topics\RowNumber\TableCreate.sql" />
+    <Content Include="Topics\RowNumber_Rank_DenseRank\Queries1.sql" />
+    <Content Include="Topics\RowNumber_Rank_DenseRank\Queries.sql" />
+    <Content Include="Topics\RowNumber_Rank_DenseRank\ReadMe.txt" />
+    <Content Include="Topics\RowNumber_Rank_DenseRank\TableCreate.sql" />
     <Content Include="Topics\ScheduledTasks\ScheduledTasks_Sel.sql" />
     <Content Include="Topics\ScheduledTasks\TableCreate.sql" />
     <Content Include="Topics\TestDB\TableCreate.sql" />
