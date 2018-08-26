@@ -1,0 +1,23 @@
+01) In general, what we are looking for are scenarios in which large numbers of rows are being processed by any given operation 
+    within the execution plan. Once we have found a high cost component, we can zoom in on what the cause is and how to resolve it.
+02) Key lookups happen when index is matched but we need to do lookup to fetch data in SELECT.
+    Use covering indexes (include keyword) to help with key lookups
+03) SET STATISTICS IO ON; This allows us to see how many logical and physical reads are made when a query is executed.
+    Logical reads tell us how many reads were made from the buffer cache. This is the number that we will refer to whenever 
+    we talk about how many reads a query is responsible for, or how much IO it is causing.    
+    Physical reads tell us how much data was read from a storage device as it was not yet present in memory. This can be a useful indication 
+    of buffer cache/memory capacity problems if data is very frequently being read from storage devices, rather than memory.
+    In general, IO will be the primary cause of latency and bottlenecks when analyzing slow queries. 
+    The unit of measurement of STATISTICS IO = 1 read = a single 8kb page = 8192 bytes.
+04) SET STATISTICS TIME ON; This shows query execution duration
+05) SQL Server maintains an execution plan cache that stores details about each query executed on a server and the plan that was chosen for it.
+    DBAs can run queries against this to help find recommended index to add or delete. Execution plan cache will be purged on restart    
+06) Parameter Sniffing might be a source of many execution plan index matches
+07) Index Scans: Data may be accessed from an index via either a scan or a seek. A scan is when an entire index is searched to return the requested data.    
+    If there is a legitimate need to return a great deal of data from a table, then an index scan may be the correct operation.
+08) Index Seek: A seek is a targeted selection of rows from the table based on a (typically) narrow filter.
+    A seek will traverse the index’s binary tree quickly to return only the data needed, without the need to inspect the entire table
+09) Avoid functions in JOINs and WHERE (e.g., LEFT, LEN, SUBSTRING, etc.), these may force an index scan.
+    Instead of "WHERE LEFT(Person.LastName, 3) = 'For'" use "WHERE Person.LastName LIKE 'For%'" instead    
+10) Implicit Conversions: When SQL Server compares any values, it needs to reconcile data types. Some conversions can occur seamlessly,
+    without any performance impact. But others like comparing NVARCHAR to INT may force index scan. Compare the right data types!
